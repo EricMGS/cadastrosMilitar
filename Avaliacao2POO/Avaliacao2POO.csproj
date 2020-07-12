@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4B92B29-4334-44F7-85BE-C087593EE512}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Avaliacao2POO</RootNamespace>
+    <AssemblyName>Avaliacao2POO</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <LangVersion>8.0</LangVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Armamento.cs" />
+    <Compile Include="Classes\Dados.cs" />
+    <Compile Include="Classes\FATD.cs" />
+    <Compile Include="Classes\FichaDeFATDs.cs" />
+    <Compile Include="Classes\Militar.cs" />
+    <Compile Include="Classes\Missao.cs" />
+    <Compile Include="Classes\OrganizacaoMilitar.cs" />
+    <Compile Include="Classes\Registro.cs" />
+    <Compile Include="Classes\RegistroDeMissao.cs" />
+    <Compile Include="Classes\RegistroMilitar.cs" />
+    <Compile Include="Classes\SistemaRegistros.cs" />
+    <Compile Include="Classes\Uniforme.cs" />
+    <Compile Include="frmAdicionarFATD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdicionarFATD.Designer.cs">
+      <DependentUpon>frmAdicionarFATD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegMissoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegMissoes.Designer.cs">
+      <DependentUpon>frmRegMissoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastrarMissao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastrarMissao.Designer.cs">
+      <DependentUpon>frmCadastrarMissao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdicionarUniforme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdicionarUniforme.Designer.cs">
+      <DependentUpon>frmAdicionarUniforme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastrarMilitar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastrarMilitar.Designer.cs">
+      <DependentUpon>frmCadastrarMilitar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastrarOM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastrarOM.Designer.cs">
+      <DependentUpon>frmCadastrarOM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFichasFATD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFichasFATD.Designer.cs">
+      <DependentUpon>frmFichasFATD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInicio.Designer.cs">
+      <DependentUpon>frmInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMilitar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMilitar.Designer.cs">
+      <DependentUpon>frmMilitar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdicionarMissao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdicionarMissao.Designer.cs">
+      <DependentUpon>frmAdicionarMissao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUniformes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUniformes.Designer.cs">
+      <DependentUpon>frmUniformes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\ITransferirOM.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAdicionarFATD.resx">
+      <DependentUpon>frmAdicionarFATD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastrarMissao.resx">
+      <DependentUpon>frmCadastrarMissao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdicionarUniforme.resx">
+      <DependentUpon>frmAdicionarUniforme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastrarMilitar.resx">
+      <DependentUpon>frmCadastrarMilitar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastrarOM.resx">
+      <DependentUpon>frmCadastrarOM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFichasFATD.resx">
+      <DependentUpon>frmFichasFATD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInicio.resx">
+      <DependentUpon>frmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMilitar.resx">
+      <DependentUpon>frmMilitar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdicionarMissao.resx">
+      <DependentUpon>frmAdicionarMissao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegMissoes.resx">
+      <DependentUpon>frmRegMissoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUniformes.resx">
+      <DependentUpon>frmUniformes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
